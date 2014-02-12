@@ -1,6 +1,7 @@
-function [f] = calcFisherSIFT(img_cell)
+function [f] = trainFisherSIFT(img_cell)
 %% Fisher Vector encoding on PCA-SIFT descriptors - calc  SIFT
 %  at 5 scales for each image, scale factors of sqrt(2)
+%  dimensionality reduction to 64 via PCA
 % INPUT - cell array of cropped RGB LFW-deepfunneled images
 
 
